@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS DOCUMENt */
+
+.hidden {
+   display: none;
+}
+
+html {
+   font-size: 62.5%; /*Setting 1rem = 10px */
+}
+
+.container {
+   max-width: 1400px;
+   background-color: rgb(238, 238, 238);
+   margin: 0 auto;
+   text-align: center;
+   color: white;
+   font-size: 1.6rem;
+}
+
+.mob-header {
+   width: 100%;
+   height: 5rem;
+   background-color: rgb(149, 109, 116);
+   position: fixed;
+   top: 0;
+}
+
+.mob-header img {
+   width: 2.5rem;
+   padding: 1.5rem;
+   float: right;
+   display: block;
+}
+
+.mob-nav {
+   width: 60%;
+   height: 100vh;
+   transform: translateX(0%);
+   background-color: rgb(172, 118, 118);
+   position: fixed;
+   right: 0;
+   top: 5rem;
+   transition: all 1s;
+}
+
+.mob-nav__hidden {
+   transform: translateX(100%);
+}
+
+.header {
+   display: none;
+   width: 100%;
+   height: 5rem;
+   background-color: rgb(158, 90, 102);
+}
+
+.hero {
+   margin-top: 5rem;
+   width: 100%;
+   height: 43rem;
+   background-color: rgb(75, 47, 52);
+}
+
+.pages {
+   width: 80%;
+   margin: 0 auto;
+
+}
+
+.page {
+   width: 100%;
+   height: 15rem;
+   background-color: rgb(75, 47, 52);
+   margin-top: 4rem;
+}
+
+.footer {
+   width: 100%;
+   height: 10rem;
+   background-color: rgb(75, 47, 52);
+   margin-top: 3rem;
+}
+
+
+@media screen and (min-width: 800px) {
+   .header {
+      display: block;
+   }
+
+   .mob-header {
+      display: none;
+   }
+   .mob-nav {
+      display: none;
+   }
+   .hero {
+      margin-top: 0rem;
+   }
+}

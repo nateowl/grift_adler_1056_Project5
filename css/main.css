@@ -82,19 +82,9 @@ html {
    margin-top: 3rem;
 }
 
-
 @media screen and (min-width: 800px) {
-   .header {
-      display: block;
-   }
-
-   .mob-header {
-      display: none;
-   }
-   .mob-nav {
-      display: none;
-   }
-   .hero {
-      margin-top: 0rem;
-   }
+   .header {display: block;}
+   .mob-header {display: none;}
+   .mob-nav {display: none;}
+   .hero {margin-top: 0rem;}
 }
